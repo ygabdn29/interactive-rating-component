@@ -1,0 +1,146 @@
+html {
+  font-size: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.main-container {
+  min-height: 100vh;
+  place-items: center;
+}
+
+.card-container {
+  flex-direction: column;
+  margin: 0 1.8rem;
+  padding: 2.4rem 2.4rem;
+  gap: 2rem;
+
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-request--text {
+  font-size: 1.875rem;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-number {
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.rating-index {
+  font-size: 1.875rem;
+  justify-self: center;
+  position: relative;
+  z-index: 0;
+  margin: 1.4rem 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-index::before {
+  content: "";
+  width: 50%;
+  padding: 2.8rem 2.8rem;
+  background-color: hsla(216, 12%, 8%, 0.3);
+  border-radius: 50%;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.btn {
+  padding: 2rem;
+  width: 100%;
+
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  border: none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+@media (min-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .main-container {
+    min-height: 100vh;
+    place-items: center;
+  }
+
+  .card-container {
+    max-width: 40rem;
+    margin: 0 1.4rem;
+    padding: 3.4rem 3rem;
+    gap: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+
+  .rating-request--text {
+    font-size: 1.5rem;
+  }
+
+  .rating-number {
+    gap: 1.6rem;
+  }
+
+  .rating-index {
+    font-size: 1.875rem;
+    margin: 1.8rem 0;
+  }
+
+  .rating-index::before {
+    width: 50%;
+    padding: 2.8rem 2.8rem;
+  }
+
+  .btn {
+    padding: 1.6rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}
