@@ -67,30 +67,22 @@ body {
 .rating-index {
   font-size: 1.875rem;
   place-self: center;
-  position: relative;
-  z-index: 0;
-  margin: 1.4rem 0;
+  margin: 0.4rem 0;
   color: hsl(0, 0%, 100%);
-}
 
-.rating-index::before {
-  content: "";
-  /* width: 20%; */
-  padding: 2.4rem;
-  /* background-color: hsla(216, 12%, 8%, 0.3); */
-  background-color: hsla(216, 12%, 54%, 0.3);
+  padding: 1.4rem 2.2rem;
   border-radius: 50%;
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  background-color: hsla(216, 12%, 54%, 0.3);
+  cursor: default;
+  transition: all 0.3s;
 }
 
-.rating-index:hover::before {
-  background-color: hsl(216, 12%, 54%);
+.rating-index:hover {
+  background-color: hsla(216, 12%, 54%);
+}
+
+.rating-active {
+  background-color: hsl(25, 97%, 53%);
 }
 
 .submit-button {
@@ -103,12 +95,19 @@ body {
 
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
 
   border: none;
   border-radius: 25px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
+  transition: all 0.5s;
+}
+
+.btn:hover,
+btn:active {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 64em) {
