@@ -24,52 +24,68 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
+
   <body>
     <main class="main-container grid">
-      <!-- Rating state start -->
       <article class="card-container flex">
-        <div class="star">
-          <img src="./images/icon-star.svg" alt="" class="star-icon" />
+        <div class="rating-start-state">
+          <div class="star">
+            <img src="./images/icon-star.svg" alt="" class="star-icon" />
+          </div>
+
+          <div class="heading">
+            <h1 class="heading-primary">How did we do?</h1>
+          </div>
+
+          <div class="rating-request">
+            <p class="rating-request--text">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+
+          <ul class="rating-number grid grid--5-cols">
+            <li class="rating-index" data-value="1">1</li>
+            <li class="rating-index" data-value="2">2</li>
+            <li class="rating-index" data-value="3">3</li>
+            <li class="rating-index" data-value="4">4</li>
+            <li class="rating-index" data-value="5">5</li>
+          </ul>
+
+          <div class="submit-button">
+            <button type="submit" class="btn">Submit</button>
+          </div>
         </div>
 
-        <div class="heading">
-          <h1 class="heading-primary">How did we do?</h1>
-        </div>
+        <div class="thank-you-state flex inactive">
+          <div class="thank-you-image">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt=""
+              class="thank-you--image"
+            />
+          </div>
 
-        <div class="rating-request">
-          <p class="rating-request--text">
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
+          <div class="rating-given"></div>
 
-        <ul class="rating-number grid grid--5-cols">
-          <li class="rating-index" data-value="1">1</p>
-          <li class="rating-index" data-value="2">2</p>
-          <li class="rating-index" data-value="3">3</p>
-          <li class="rating-index" data-value="4">4</p>
-          <li class="rating-index" data-value="5">5</p>
-        </ul>
+          <div class="thank-you-text">
+            <h2 class="sub-heading">Thank you!</h2>
+          </div>
 
-        <div class="submit-button">
-          <button type="submit" class="btn">Submit</button>
+          <div class="appreciation">
+            <p class="appreciation--text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
         </div>
       </article>
-      <!-- Rating state end -->
     </main>
-
-    <!-- Thank you state start -->
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If -->
-    <!-- you ever need more support, don’t hesitate to get in touch! -->
-    <!-- Thank you state end -->
-
-    <!-- <div class="attribution">
+  </body>
+</html>
+<!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
-  </body>
-</html>

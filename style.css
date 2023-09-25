@@ -25,6 +25,17 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.inactive {
+  visibility: hidden;
+  transition: all 0.7s;
+  opacity: 0;
+  max-height: 0;
+}
+
+.active {
+  display: block;
+}
+
 .main-container {
   min-height: 100vh;
   place-items: center;
@@ -44,6 +55,7 @@ body {
   background-color: hsla(216, 12%, 54%, 0.3);
   padding: 1.4rem;
   border-radius: 50%;
+  margin-bottom: 1.2rem;
 }
 
 .heading-primary {
@@ -67,7 +79,7 @@ body {
 .rating-index {
   font-size: 1.875rem;
   place-self: center;
-  margin: 0.4rem 0;
+  margin: 2.4rem 0;
   color: hsl(0, 0%, 100%);
 
   padding: 1.4rem 2.2rem;
@@ -108,6 +120,38 @@ body {
 btn:active {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
+}
+
+/*************************/
+/* THANK YOU STATE */
+.thank-you-state {
+  /* display: none; */
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.thank-you--image {
+  max-width: 15rem;
+}
+
+.rating-given {
+  font-size: 1.875rem;
+  padding: 0.4rem 2rem;
+  border-radius: 25px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, 0.3);
+}
+
+.thank-you-text {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.appreciation--text {
+  font-size: 1.875rem;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
 }
 
 @media (min-width: 64em) {
@@ -153,5 +197,14 @@ btn:active {
     padding: 1.6rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+  }
+
+  /*************************/
+  /* THANK YOU STATE */
+  .rating-given {
+    font-size: 1.5rem;
+  }
+  .appreciation--text {
+    font-size: 1.5rem;
   }
 }
