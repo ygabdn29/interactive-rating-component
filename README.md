@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/ygabdn29/interactive-rating-component.git)
+- Solution URL: (https://github.com/ygabdn29/interactive-rating-component)
 - Live Site URL: (https://ygabdn29.github.io/interactive-rating-component/)
 
 ## My process
